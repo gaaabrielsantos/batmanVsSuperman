@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman vs Superman | Em breve nos cinemas</title>
+
+    <link rel="stylesheet" href="dist/css/main.css">
+
+    <!-- bs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>
+                <img src="dist/images/logoBVS.png" alt="supermario o filme">
+            </h1>
+            
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=IwfUnkBfdZ4&t=95s" class="btn--one">TRAILER</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=y0cCwzqpOzQ" class="btn--two">COMPRAR FILME</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__container">
+            <img src="dist/images/bvsLogo.png" alt="">
+        </div>
+    </section>
+
+    <section class="casting">
+        <div class="casting__container">
+            <h2 class="title--big">ELENCO</h2>
+
+            <ul class="casting__list">
+                <li class="casting__list__item">
+                    <img src="dist/images/Cast/benAffleck.jpeg" alt="">
+                    <h3 class="title">Ben Affleck</h3>
+                    <h2 class="title--big">Batman | Bruce Wayne</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/Cast/henryCaviil.webp" alt="">
+                    <h3 class="title">Henry Cavill</h3>
+                    <h2 class="title--big">Superman | Clark Kent</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/Cast/JesseEisenberg.jpeg" alt="">
+                    <h3 class="title">Jesse Eisenberg</h3>
+                    <h2 class="title--big">Lex Luthor</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/Cast/galGadot.avif" alt="">
+                    <h3 class="title">Gal Gadot</h3>
+                    <h2 class="title--big">Wonder Woman | Diana</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/Cast/callanMulvey.jpg" alt="">
+                    <h3 class="title">Callan Mulvey</h3>
+                    <h2 class="title--big">KGBesta</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/Cast/jeremyIrons.jpeg" alt="">
+                    <h3 class="title">Jeremy Irons</h3>
+                    <h2 class="title--big">Alfred Pennyworth</h2>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="sinopse">
+        <section class="sinopse__container">
+            <img src="dist/images/BvSConfronto.png" alt="">
+            <div>
+                <h2 class="title--big">SINOPSE</h2>
+                <p class="text">O confronto entre Superman e Zod em Metrópolis fez a população 
+                    mundial se dividir sobre a presença de extraterrestres na Terra. Enquanto 
+                    muitos consideram Superman um novo deus, há aqueles que entendem ser 
+                    extremamente perigosa a existência de um ser tão poderoso sem qualquer 
+                    tipo de controle. Bruce Wayne é um dos que acreditam nesta segunda hipótese. 
+                    Sob o manto de um Batman violento e obcecado, ele enfrenta Superman enquanto 
+                    o mundo se pergunta que tipo de herói precisa.</p>
+                    <button class="btn__primary">COMPRAR FILME</button>
+            </div>
+        </section>
+    </div>
+
+    <section class="random">
+        <h2 class="title--big">QUAL PERSONAGEM DO FILME VOCÊ SERIA?</h2>
+        <div class="random__container">
+            <div class="random__container__description">
+                <h3 class="title" id="title">Vamos jogar?</h3>
+                <p class="text" id="text">Clique no botão abaixo e descubra quem você seria no universo de Batman vs Superman</p>
+                <button class="btn__primary" id="sortear">VER AGORA</button>
+            </div>
+            <div class="random__container__image">
+                <img src="dist/images/superman-batman.gif" id="imagem" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="sinopse">
+        <section class="trailer">
+            <h2 class="title--big">ASSISTA AO TRAILER</h2>
+            <div class="trailer__video">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/IwfUnkBfdZ4?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>    
+        </section>
+    </div>
+
+    <footer>
+        <img src="dist/images/dcComics.png" alt="">
+        <p class="text">All books, titles, characters, character names, slogans, logos, and related indicia are trademarks of and copyright DC Comics and/or WildStorm Productions.</p>
+    </footer>
+
+    <div class="frame" id="frame">
+        <div class="frame__container" id="frameContainer">
+            <div class="frame__container__video">
+                <iframe autoplay="true" width="800" height="450" src="https://www.youtube.com/embed/IwfUnkBfdZ4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="frame__container__close">
+                <i class="bi bi-x-lg" id="close"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>

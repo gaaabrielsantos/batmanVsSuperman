@@ -1,0 +1,140 @@
+
+.characters{
+    max-width: 1440px;
+    max-height: 500px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    @media (max-width: 768px){
+        .d-flex{
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    @media (max-width: 768px){
+        height: 65vh;
+
+        .d-flex{                  
+
+            img{
+                height: 125px;
+                width: auto;
+            }
+        }
+    }
+
+    @media (max-width: 425px){
+        .carousel-control-next-icon, .carousel-control-prev-icon{
+            display: none;
+        }
+
+        height: 100vh;
+    }
+
+    @media (max-width: 375px){
+        margin-top: 200px;
+    }
+    
+    @media (max-width: 1024px){
+
+
+        .carousel-item{
+            width: 100%;
+
+            @media (max-width: 425px){
+                width: 100%;
+            }
+        }
+
+        &__description{
+            max-width: 250px;
+            height: 100%;
+            width: 100%;
+
+
+            @media (max-width: 425px){
+                max-height: 200px;
+            }
+            
+            p{
+                font-size: 14px;
+
+                @media (max-width: 425px){
+                    font-size: 12px;
+                }
+
+                
+            }
+        }
+    }
+
+    h2{
+        margin-bottom: 25px;
+    }
+
+    .carousel-indicators{
+        margin-bottom: -1rem;
+
+        @media (max-width: 425px){
+            margin-bottom: -2rem;
+        }
+    }
+
+    .carousel{
+        max-width: 1000px;
+        width: 100%;
+
+        @media (max-width: 1440px){
+            max-width: 75%;
+        }
+    }
+
+
+    &__image{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        
+        img{
+            max-width: 250px;
+            width: 100%;
+        }
+    }
+
+    &__description{
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+.run{
+    height: 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: 1440px){
+        max-width: 90vw;
+        width: 100%;
+    }
+
+    img{
+        height: 80px;
+        animation-name: run;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes run {
+    0%   {padding-left: 0;}
+    50% {padding-left: calc(100% - 80px);}
+    100% {padding-left: 0;}
+}
